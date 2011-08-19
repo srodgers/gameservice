@@ -1,0 +1,117 @@
+<%= form_for(@nflplayer) do |f| %>
+  <% if @nflplayer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@nflplayer.errors.count, "error") %> prohibited this nflplayer from being saved:</h2>
+
+      <ul>
+      <% @nflplayer.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :position %><br />
+    <%= f.text_field :position %>
+  </div>
+  <div class="field">
+    <%= f.label :picurl %><br />
+    <%= f.text_field :picurl %>
+  </div>
+  <div class="field">
+    <%= f.label :wk1opp %><br />
+    <%= f.text_field :wk1opp %>
+  </div>
+  <div class="field">
+    <%= f.label :wk2opp %><br />
+    <%= f.text_field :wk2opp %>
+  </div>
+  <div class="field">
+    <%= f.label :wk3opp %><br />
+    <%= f.text_field :wk3opp %>
+  </div>
+  <div class="field">
+    <%= f.label :wk4opp %><br />
+    <%= f.text_field :wk4opp %>
+  </div>
+  <div class="field">
+    <%= f.label :wk5opp %><br />
+    <%= f.text_field :wk5opp %>
+  </div>
+  <div class="field">
+    <%= f.label :wk6opp %><br />
+    <%= f.text_field :wk6opp %>
+  </div>
+  <div class="field">
+    <%= f.label :wk7opp %><br />
+    <%= f.text_field :wk7opp %>
+  </div>
+  <div class="field">
+    <%= f.label :wk1field %><br />
+    <%= f.text_field :wk1field %>
+  </div>
+  <div class="field">
+    <%= f.label :wk2field %><br />
+    <%= f.text_field :wk2field %>
+  </div>
+  <div class="field">
+    <%= f.label :wk3field %><br />
+    <%= f.text_field :wk3field %>
+  </div>
+  <div class="field">
+    <%= f.label :wk4field %><br />
+    <%= f.text_field :wk4field %>
+  </div>
+  <div class="field">
+    <%= f.label :wk5field %><br />
+    <%= f.text_field :wk5field %>
+  </div>
+  <div class="field">
+    <%= f.label :wk6field %><br />
+    <%= f.text_field :wk6field %>
+  </div>
+  <div class="field">
+    <%= f.label :wk7field %><br />
+    <%= f.text_field :wk7field %>
+  </div>
+  <div class="field">
+    <%= f.label :team %><br />
+    <%= f.text_field :team %>
+  </div>
+  <div class="field">
+    <%= f.label :wk1points %><br />
+    <%= f.text_field :wk1points %>
+  </div>
+  <div class="field">
+    <%= f.label :wk2points %><br />
+    <%= f.text_field :wk2points %>
+  </div>
+  <div class="field">
+    <%= f.label :wk3points %><br />
+    <%= f.text_field :wk3points %>
+  </div>
+  <div class="field">
+    <%= f.label :wk4points %><br />
+    <%= f.text_field :wk4points %>
+  </div>
+  <div class="field">
+    <%= f.label :wk5points %><br />
+    <%= f.text_field :wk5points %>
+  </div>
+  <div class="field">
+    <%= f.label :wk6points %><br />
+    <%= f.text_field :wk6points %>
+  </div>
+  <div class="field">
+    <%= f.label :wk7points %><br />
+    <%= f.text_field :wk7points %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

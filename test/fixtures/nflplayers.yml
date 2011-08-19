@@ -1,0 +1,55 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  position: MyString
+  picurl: MyString
+  wk1opp: MyString
+  wk2opp: MyString
+  wk3opp: MyString
+  wk4opp: MyString
+  wk5opp: MyString
+  wk6opp: MyString
+  wk7opp: MyString
+  wk1field: MyString
+  wk2field: MyString
+  wk3field: MyString
+  wk4field: MyString
+  wk5field: MyString
+  wk6field: MyString
+  wk7field: MyString
+  team: MyString
+  wk1points: 1
+  wk2points: 1
+  wk3points: 1
+  wk4points: 1
+  wk5points: 1
+  wk6points: 1
+  wk7points: 1
+
+two:
+  name: MyString
+  position: MyString
+  picurl: MyString
+  wk1opp: MyString
+  wk2opp: MyString
+  wk3opp: MyString
+  wk4opp: MyString
+  wk5opp: MyString
+  wk6opp: MyString
+  wk7opp: MyString
+  wk1field: MyString
+  wk2field: MyString
+  wk3field: MyString
+  wk4field: MyString
+  wk5field: MyString
+  wk6field: MyString
+  wk7field: MyString
+  team: MyString
+  wk1points: 1
+  wk2points: 1
+  wk3points: 1
+  wk4points: 1
+  wk5points: 1
+  wk6points: 1
+  wk7points: 1

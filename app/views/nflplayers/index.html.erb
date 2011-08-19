@@ -1,0 +1,71 @@
+<h1>Listing nflplayers</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Position</th>
+    <th>Picurl</th>
+    <th>Wk1opp</th>
+    <th>Wk2opp</th>
+    <th>Wk3opp</th>
+    <th>Wk4opp</th>
+    <th>Wk5opp</th>
+    <th>Wk6opp</th>
+    <th>Wk7opp</th>
+    <th>Wk1field</th>
+    <th>Wk2field</th>
+    <th>Wk3field</th>
+    <th>Wk4field</th>
+    <th>Wk5field</th>
+    <th>Wk6field</th>
+    <th>Wk7field</th>
+    <th>Team</th>
+    <th>Wk1points</th>
+    <th>Wk2points</th>
+    <th>Wk3points</th>
+    <th>Wk4points</th>
+    <th>Wk5points</th>
+    <th>Wk6points</th>
+    <th>Wk7points</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @nflplayers.each do |nflplayer| %>
+  <tr>
+    <td><%= nflplayer.name %></td>
+    <td><%= nflplayer.position %></td>
+    <td><%= nflplayer.picurl %></td>
+    <td><%= nflplayer.wk1opp %></td>
+    <td><%= nflplayer.wk2opp %></td>
+    <td><%= nflplayer.wk3opp %></td>
+    <td><%= nflplayer.wk4opp %></td>
+    <td><%= nflplayer.wk5opp %></td>
+    <td><%= nflplayer.wk6opp %></td>
+    <td><%= nflplayer.wk7opp %></td>
+    <td><%= nflplayer.wk1field %></td>
+    <td><%= nflplayer.wk2field %></td>
+    <td><%= nflplayer.wk3field %></td>
+    <td><%= nflplayer.wk4field %></td>
+    <td><%= nflplayer.wk5field %></td>
+    <td><%= nflplayer.wk6field %></td>
+    <td><%= nflplayer.wk7field %></td>
+    <td><%= nflplayer.team %></td>
+    <td><%= nflplayer.wk1points %></td>
+    <td><%= nflplayer.wk2points %></td>
+    <td><%= nflplayer.wk3points %></td>
+    <td><%= nflplayer.wk4points %></td>
+    <td><%= nflplayer.wk5points %></td>
+    <td><%= nflplayer.wk6points %></td>
+    <td><%= nflplayer.wk7points %></td>
+    <td><%= link_to 'Show', nflplayer %></td>
+    <td><%= link_to 'Edit', edit_nflplayer_path(nflplayer) %></td>
+    <td><%= link_to 'Destroy', nflplayer, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Nflplayer', new_nflplayer_path %>
